@@ -1,0 +1,36 @@
+/*Index by Teodora Pencheva*/
+
+/*Main SetUp*/
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#viewport {
+    overflow:hidden; /* Occlude elements outside viewport! */
+    width: 1300px;
+    height: 700px;
+    background-color: #000;
+    border: none;
+  }
+  #wall {
+    /* Default settings by code:
+     *  position: relative;
+     *  cursor: move;
+     */
+  }
+    #wall ._tile {
+      /* Default settings by code:
+       * position: absolute,
+       * left: [auto],
+       * top: [auto],
+       * width: [set by constructor],
+       * height: [set by constructor],
+       * overflow: hidden
+       */
+      background-image: url("backimgEX.jpg");
+
+      font-size:36px;
+      font-weight:bold;
+      color:#000;
+    }

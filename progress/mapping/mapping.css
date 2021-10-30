@@ -1,0 +1,74 @@
+/*Index by Teodora Pencheva*/
+
+/*Main SetUp*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+/*button {
+	border: none;
+	width: 25px;
+	height: 25px;
+	background-color: black;
+	color: #D3AB7F;
+	font-weight: 700;
+	font-size: 18px;
+}
+*/
+/*////////////////////////////*/
+/*Image & Background SetUp*/
+
+#hand {
+	z-index: 100;
+	width: 50%;
+	position: fixed;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#hand1 {
+	z-index: -1;
+	width: 50%;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#blank {
+	z-index: -5;
+	width: 50%;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.background {
+	background-color: black;
+	width: 85%;
+	height: 85%;
+	margin-right: 4%;
+	margin-left: 10%;
+	padding: 3%;
+}
+
