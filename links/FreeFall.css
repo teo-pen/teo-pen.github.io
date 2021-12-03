@@ -1,0 +1,63 @@
+/*FreeFall by Teodora Pencheva*/
+/*REFERENCES
+(1) https://codepen.io/shshaw/pen/OVGWLG
+This helped me adjust the video's placement*/
+
+/*Main SetUp*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #C49C93;
+}
+
+
+/*Video SetUp*/ /*(1)*/
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%; 
+  height: 100%; 
+  position: absolute;
+}
+
+/*Header SetUp*/
+h1 {
+	z-index: 10;
+	position: absolute;
+	font-family: Helvetica;
+  left: 5%;
+  top: 5%;
+	font-size: 3vw;
+  text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #96655C;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #775E52;
+}
+
+
+@media only screen and (min-width: 1200px) {
+	h1 {
+		font-size: 2.5vw;
+    left: 5%;
+	}
+}

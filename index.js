@@ -1,94 +1,98 @@
 // Index by Teodora Pencheva
 
 
-$(".windowOne").click(function(){
-	
+////// TITLES
+//Add titles on hover
+$(".wOne").mouseover(function(){
+
+	$('#base').prepend('<img id="tOne" src="images/base1.jpg">');
+	noBase();	
+});
+
+$(".wTwo").mouseover(function(){
+
+	$('#base').prepend('<img id="tTwo" src="images/base2.jpg">');
+	noBase();
+});
+
+$(".wThree").mouseover(function(){
+
+	$('#base').prepend('<img id="tThree" src="images/base3.jpg">');
+	noBase();
+});
+
+$(".wFour").mouseover(function(){
+
+	$('#base').prepend('<img id="tFour" src="images/base4.jpg">');
+	noBase();	
+});
+
+
+//Erase titles
+$(".wOne").mouseout(function(){
+
+	yesBase();
+	$('#tOne').remove();
+});
+
+$(".wTwo").mouseout(function(){
+
+	yesBase();
+	$('#tTwo').remove();
+});
+
+$(".wThree").mouseout(function(){
+
+	yesBase();
+	$('#tThree').remove();
+});
+
+$(".wFour").mouseout(function(){
+
+	yesBase();
+	$('#tFour').remove();
+});
+
+
+//////CLICKING
+$(".wOne").click(function(){
+
+	window.location.href = 'http://www.google.com';
+});
+
+$(".wTwo").click(function(){
+
+	window.location.href = 'http://www.google.com';
+});
+
+$(".wThree").click(function(){
+
+	window.location.href = 'http://www.google.com';
+});
+
+$(".wFour").click(function(){
+
+	window.location.href = 'http://www.google.com';
 });
 
 
 
 
+//Shortcut Base Image
+function noBase(){
+	$('#building').remove();
+}
+
+function yesBase(){
+	$('#base').prepend('<img id="building" src="images/base.jpg">');
+}
 
 
+////// RESIZING IMAGE MAP
+jQuery(function($) { 
+    $('map').imageMapResize();
+});
 
 
-// UNUSED CODE
-// _2_ (drag with library)
-
-// //window height and width
-// var h = window.innerHeight;
-// var w = window.innerWidth;
-
-// $("#viewport").on( "mouseenter", function() {
-//     $( this ).css({
-//       "height": h + "px",
-//       "width": w + "px",
-//     });
-// });
-
-// //Infinite Drag Function
-// var wall = jQuery.infinitedrag("#wall");
-
-// var infinitedrag = jQuery.infinitedrag("#wall", {}, {
-//     width: w,
-//     height: h,
-//     start_col: 0,
-//     start_row: 0
-// });
-
-// var disabled = wall.disabled();
-
-// //windows
-// $('#testDot').click(function(e){
-//     $(this).toggleClass('fullscreen'); 
-
-//     wall.disabled(true);
-
-//     $('#exit').css( "z-index", "200" );
-// });
-
-// $('#exit').click(function(e){
-//     $('testDot').toggleClass('fullscreen'); 
-
-//     wall.disabled(false);
-
-//     $(this).css( "z-index", "-10" );
-// });
-
-
-
-// _1_ (drag no library)
-
-// var w = window.innerWidth;
-// var h = window.innerHeight;
-
-// let newtop = newleft = 0;
-// var move = {
-//   drag: function() {
-//     main = $('main');
-//     main.draggable({
-//       	drag: function(event, ui) {
-
-// 	        newtop = Math.abs(ui.position.top);
-// 	        newleft = Math.abs(ui.position.left);
-	        
-// 	        $(this).css({
-// 	            'padding-right': newleft,
-// 	            'padding-bottom': newtop,
-// 	        });
-
-// 	        if(newtop>h){
-// 	        	$( this ).css('background-position', "-100% -100%");
-// 	        };
-// 	        if(newleft<w){
-// 	        	$( this ).css('background-position', "-100% -100%");
-//             };
-	        
-//       	}, scroll: false,
-//     });
-//   }
-// }
-
-// move.drag();
 
 console.log("index");

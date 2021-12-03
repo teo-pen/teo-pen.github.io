@@ -1,52 +1,76 @@
 /*Index by Teodora Pencheva*/
 
 /*Main SetUp*/
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  background-color: #5988B2;
 }
 
 
-
-
-/*UNUSED CODE*/
-/*_2_ (drag with library)*/
-/*#viewport {
-  overflow:hidden; 
-  background-color:#000;
-  width: 1368px;
-  height: 700px;
-  background-color: #ffe3f3;
-  border: none;
-}
-
-#wall ._tile { 
-  color: rgba(0, 0, 0, 0);
-}
-
-#testDot {
-  z-index: 5;
-  background-color: black;
-  position: relative;
-  width:500px; 
-  height:400px;
-}
-
-#testDot.fullscreen{
-    z-index: 100; 
-    width: 100%; 
-    height: 100%; 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-}
-
-a {
-  color: white;
-  position: absolute;
-}
-
-#exit {
+/*Image SetUp*/
+#building {
   z-index: -100;
-}*/
+  width: 75%;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  right: 0;
+  text-align: center;
+}
+
+#clear {
+  z-index: 100;
+  width: 75%;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  right: 0;
+  text-align: center;
+}
+
+#tOne {
+  z-index: -100;
+  width: 75%;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  right: 0;
+  text-align: center;
+}
+
+#tTwo {
+  z-index: -100;
+  width: 75%;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  right: 0;
+  text-align: center;
+}
+
+#tThree {
+  z-index: -100;
+  width: 75%;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  right: 0;
+  text-align: center;
+}
+
+#tFour {
+  z-index: -100;
+  width: 75%;
+  position: fixed;
+  bottom: 0px;
+  margin-right: auto;
+  right: 0;
+  text-align: center;
+}

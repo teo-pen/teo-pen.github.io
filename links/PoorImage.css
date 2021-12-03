@@ -1,0 +1,98 @@
+/*FreeFall by Teodora Pencheva*/
+/*REFERENCES
+(1) https://codepen.io/shshaw/pen/OVGWLG
+This helped me adjust the video's placement*/
+
+/*Main SetUp*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/back3.jpg");
+}
+
+/*Image SetUp*/
+#tv {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+
+/*Video SetUp*/ /*(1)*/
+.video-container {
+  z-index: 5;
+  position: fixed;
+  width: 65%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  top: 25px;
+  overflow: hidden;
+}
+
+.video-container video {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+}
+
+
+/*Header SetUp*/
+h1 {
+	z-index: 15;
+	position: absolute;
+	font-family: Helvetica;
+  right: 5%;
+  bottom: 5%;
+	font-size: 3vw;
+  text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #E0E3D6;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #A0260E;
+}
+
+/*Resize Elements*/
+@media only screen and (min-width: 400px) {
+  .video-container {
+    top: 175px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .video-container {
+    top: 125px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .video-container {
+    top: 75px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .video-container {
+    top: 25px;
+  }
+}

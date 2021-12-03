@@ -1,0 +1,43 @@
+<!-- PoorImage by Teodora Pencheva -->
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Timeless</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Linking CSS and JS Files -->
+		<link rel="stylesheet" href="PoorImage.css">
+		
+		<!-- JQuery Libraries -->
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="../libraries/imageMapResizer.js"></script>
+	</head>
+
+
+	<body>
+		<h1>
+			<a href="https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/">In Defense of<br> the Poor Image</a>
+		</h1>
+
+		<div class="video-container">
+			<video id="main" width="1920" height="1200" playsinline autoplay muted loop>
+				<source src="../images/tvVideo.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div id="tv-container">
+			<img id="tv" src="../images/tv.png" usemap="#knobs">
+		</div>
+
+		<map name="knobs">
+			<area class="kOne" shape="poly" coords="1176,425, 1251,426, 1276,461, 1276,515, 1256,541, 1181,541, 1151,510, 1151,456" href="#"/>
+			<area class="kTwo" shape="poly" coords="1181,555, 1240,555, 1276,591, 1276,646, 1256,681, 1181,686, 1151,655, 1145,591," href="#"/>
+		</map>
+
+	</body>
+	<script src="PoorImage.js"></script>
+
+</html>

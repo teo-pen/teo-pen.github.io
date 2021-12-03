@@ -6,13 +6,34 @@
 //This is where I found the image map resizer
 
 
+////// TEST
+function mapTest(){
+	$("hand").attr("usemap","#fingers2");
+	$("hand").attr("src","test.png");
+}
+
+function mapTestOff(){
+	$("hand").attr("usemap","#fingers");
+	$("hand").attr("src","handF.png");
+}
+
+//THUMB
+$(".tthumb").click(function(){
+	$('.handHolder').prepend('<img id="hand1" src="hand1.png"/>');
+	$('.handHolder').prepend('<img id="blank" src="blank.png"/>');
+
+
+	zChange();
+});
+
 ////// FINGERS
 //THUMB
 $(".thumb").click(function(){
-	$('.handHolder').prepend('<img id="hand1" src="hand1.png"/>');	
+	$('.handHolder').prepend('<img id="hand1" src="test.png"/>');	
 	$('.handHolder').prepend('<img id="blank" src="blank.png"/>');
 
 	zChange();
+	mapTest();
 });
 
 //FORE
@@ -64,6 +85,7 @@ function zChangeOff(){
 //EXIT BUTTON
 $("#exit").click(function(){
   zChangeOff();
+  mapTestOff();
 
   $("#hand1").remove();
   $('#blank').remove();
