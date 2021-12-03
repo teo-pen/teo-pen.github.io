@@ -57,22 +57,22 @@ $(".wFour").mouseout(function(){
 //////CLICKING
 $(".wOne").click(function(){
 
-	window.location.href = 'http://www.google.com';
+	window.location.href = 'https://teo-pen.github.io/links/Timeless.html';
 });
 
 $(".wTwo").click(function(){
 
-	window.location.href = 'http://www.google.com';
+	window.location.href = 'https://teo-pen.github.io/links/FreeFall.html';
 });
 
 $(".wThree").click(function(){
 
-	window.location.href = 'http://www.google.com';
+	window.location.href = 'https://teo-pen.github.io/links/PoorImage.html';
 });
 
 $(".wFour").click(function(){
 
-	window.location.href = 'http://www.google.com';
+	window.location.href = 'https://teo-pen.github.io/links/Virtual.html';
 });
 
 
